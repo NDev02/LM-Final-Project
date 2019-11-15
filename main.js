@@ -12,7 +12,6 @@ let mapInformation = [
     {
         "title": "REDLINING",
         "description": [
-            "Redlining is the systematic denial of various services to residents of specific, often racially associated, neighborhoods or communities, either directly or through the selective raising of prices.",
             "The map to the right shows how the United States government and the Home Owners Loan Corporation (HOLC) redlined Rochester, NY, in the 1930s. Click on a colored region to see what HOLC described it as.",
             "<ul><li>Map Key</li><li>Green = 'The Best'</li><li>Blue = 'Still Desireable'</li><li>Yellow = 'Definitely Declining'</li><li>Red = 'Hazardous'</li></ul>"
         ]
