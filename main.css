@@ -77,7 +77,8 @@ body,html {
 }
 
 .map-overlay div img {
-    min-width: 100%;
+    min-height: 100%;
+    max-height: none;
 }
 
 .fade-out {
