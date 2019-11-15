@@ -65,15 +65,19 @@ body,html {
     position: absolute;
     width: calc(100% - 450px);
     display: grid;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 5fr 1fr;
     right: 0;
     background: #210401;
-    align-content: center;
+    align-items: center;
     height: 100vh;
 }
 
 .map-overlay div {
     padding: 1em;
+}
+
+.map-overlay div img {
+    min-width: 100%;
 }
 
 .fade-out {
