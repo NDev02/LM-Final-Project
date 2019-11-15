@@ -1,0 +1,29 @@
+// Generates the data we need for poverty
+// fetch("poverty-by-tract.json").then(res => res.json()).then(pov => {
+//     fetch("nys-tracts.geojson").then(r => r.json()).then(tracts => {
+//         crossData(tracts, pov.data);
+//     });
+// });
+
+function crossData(tracts, pov) {
+
+    let tokenized = {};
+    let newData = {
+        "type": "FeatureCollection",
+        "features": []
+    };
+    for (let tract of tracts.features) {
+
+        tokenized[tract.properties.GEOID] = tract;
+
+    }
+    for (let region of pov) {
+
+        let feature = JSON.parse(JSON.stringify(tokenized[region["ID Geography"].substring(7)]));
+        Object.assign(feature.properties, region);
+        newData.features.push(feature);
+
+    }
+    console.log(newData);
+
+}
