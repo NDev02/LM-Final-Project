@@ -55,7 +55,7 @@ body,html {
     text-align: center;
     padding: 1em;
     display: grid;
-    grid-template-rows: 1fr 2fr 3em;
+    grid-template-rows: 20% auto 20%;
     align-items: center;
     overflow: auto;
 }
